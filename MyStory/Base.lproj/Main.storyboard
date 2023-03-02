@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AkE-Pq-Cie">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Story-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bJD-1p-qMo" userLabel="Parent Stack">
+                                <rect key="frame" x="16" y="119" width="361" height="583"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ej7-AO-dUN" userLabel="ImageTitle Stack">
+                                        <rect key="frame" x="36.666666666666657" y="0.0" width="287.66666666666674" height="326.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Deadpool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbX-go-CCs">
+                                                <rect key="frame" x="84" y="0.0" width="120" height="31.333333333333332"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31.329999999999998" id="3QC-dx-DNn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deadPool" translatesAutoresizingMaskIntoConstraints="NO" id="AFM-9P-CK5">
+                                                <rect key="frame" x="0.33333333333334281" y="38.333333333333343" width="287" height="288"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="AFM-9P-CK5" secondAttribute="height" multiplier="287:288" id="hd7-cW-jIT"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b6A-7Q-Tpy" userLabel="Button Stack">
+                                        <rect key="frame" x="51.666666666666657" y="334.33333333333331" width="257.66666666666674" height="248.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJY-1Z-vgK">
+                                                <rect key="frame" x="21.333333333333314" y="0.0" width="215" height="76.333333333333329"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="0.50393085090481504" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="strokeColor" systemColor="labelColor"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="My Background Story">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="tr5-FL-CTQ" appends="YES" id="qP2-HI-fnO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irc-RR-vIx">
+                                                <rect key="frame" x="17.999999999999986" y="86.333333333333314" width="221.66666666666663" height="76"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5039308509" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="strokeColor" systemColor="labelColor"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="My Heart Belongs to...">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Txn-rb-z0N" appends="YES" id="fES-Td-hWd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRn-SX-GnI">
+                                                <rect key="frame" x="0.0" y="172.33333333333331" width="257.66666666666669" height="76.333333333333314"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="0.5039308509" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="strokeColor" systemColor="labelColor"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="How Fast do I Regenerate">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="GmI-20-G9u" appends="YES" id="lzE-MW-Csh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="irc-RR-vIx" firstAttribute="leading" secondItem="b6A-7Q-Tpy" secondAttribute="leading" constant="18" id="jFt-vI-zjW"/>
+                                            <constraint firstItem="LJY-1Z-vgK" firstAttribute="leading" secondItem="b6A-7Q-Tpy" secondAttribute="leading" constant="21.333333333333314" id="qkh-ry-Fnz"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ej7-AO-dUN" firstAttribute="leading" secondItem="bJD-1p-qMo" secondAttribute="leading" constant="36.666666666666657" id="Pme-rO-uJZ"/>
+                                    <constraint firstItem="b6A-7Q-Tpy" firstAttribute="top" secondItem="bJD-1p-qMo" secondAttribute="top" constant="334.33333333333326" id="SOR-3a-xGL"/>
+                                    <constraint firstItem="b6A-7Q-Tpy" firstAttribute="leading" secondItem="bJD-1p-qMo" secondAttribute="leading" constant="51.666666666666657" id="v91-Go-cXx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bJD-1p-qMo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="BWF-AV-jus"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bJD-1p-qMo" secondAttribute="bottom" constant="116" id="Q78-gs-sZm"/>
+                            <constraint firstItem="bJD-1p-qMo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nxo-WU-7hf"/>
+                            <constraint firstItem="bJD-1p-qMo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zjl-9f-EOa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Story" id="XNn-bA-10Q"/>
+                    <connections>
+                        <outlet property="deadImage" destination="AFM-9P-CK5" id="PEe-HE-yN1"/>
+                        <segue destination="yzg-M9-4LS" kind="show" identifier="detailSegue" id="aSX-sf-t4n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tr5-FL-CTQ">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="twd-Jc-sjU"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Txn-rb-z0N">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="DW6-7i-QBx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="GmI-20-G9u">
+                    <connections>
+                        <action selector="didTapButton:" destination="BYZ-38-t0r" id="4FE-1o-diA"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1004" y="4"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="CHa-Wd-z6y">
+            <objects>
+                <viewController id="yzg-M9-4LS" customClass="DetailViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XZi-Fc-lgY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LxX-hh-zpQ">
+                                <rect key="frame" x="16" y="103" width="361" height="246"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="m5t-Si-kIg">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="O0P-zt-UyH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" enabled="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D2S-7H-Qsf">
+                                        <rect key="frame" x="160.66666666666666" y="228" width="40" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jOI-Yi-N1j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LxX-hh-zpQ" firstAttribute="trailing" secondItem="XZi-Fc-lgY" secondAttribute="trailingMargin" id="Gyq-Jp-XmF"/>
+                            <constraint firstItem="LxX-hh-zpQ" firstAttribute="leading" secondItem="XZi-Fc-lgY" secondAttribute="leadingMargin" id="W37-Pa-7gU"/>
+                            <constraint firstItem="LxX-hh-zpQ" firstAttribute="top" secondItem="jOI-Yi-N1j" secondAttribute="top" id="qGj-ld-djC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2cP-s2-bpg"/>
+                    <connections>
+                        <outlet property="deadPoolImageView" destination="m5t-Si-kIg" id="AwS-D1-Xbw"/>
+                        <outlet property="textLabel" destination="D2S-7H-Qsf" id="HIk-TZ-VfR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HDw-ju-hFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852.6717557251907" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hhp-sc-efB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AkE-Pq-Cie" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zv9-yk-NNb">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JUm-9u-uek"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYX-PD-fr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="deadPool" width="1170" height="780"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
